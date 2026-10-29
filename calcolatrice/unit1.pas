@@ -14,6 +14,8 @@ type
   TForm1 = class(TForm)
     Button1: TButton;
     Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
     Edit1: TEdit;
     Edit2: TEdit;
     Edit3: TEdit;
@@ -21,6 +23,8 @@ type
     Label2: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
 
   public
@@ -44,6 +48,16 @@ end;
 procedure TForm1.Button2Click(Sender: TObject);
 begin
   Edit3.Text := IntToStr(StrToInt(Edit1.Text) * StrToInt(Edit2.Text));
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  Edit3.Text := IntToStr(StrToInt(Edit1.Text) - StrToInt(Edit2.Text));
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+begin
+  Edit3.Text := IntToStr(StrToInt(Edit1.Text) div StrToInt(Edit2.Text));
 end;
 
 end.

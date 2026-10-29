@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = 256
+  Left = 673
   Height = 240
-  Top = 145
-  Width = 431
+  Top = 219
+  Width = 464
   Caption = 'calcolatrice di luca'
   ClientHeight = 240
-  ClientWidth = 431
+  ClientWidth = 464
   Color = clSilver
   LCLVersion = '4.2.0.0'
   object Edit1: TEdit
@@ -16,14 +16,14 @@ object Form1: TForm1
     TabOrder = 0
   end
   object Edit2: TEdit
-    Left = 224
+    Left = 280
     Height = 23
     Top = 48
     Width = 128
     TabOrder = 1
   end
   object Edit3: TEdit
-    Left = 96
+    Left = 128
     Height = 23
     Top = 128
     Width = 176
@@ -38,14 +38,14 @@ object Form1: TForm1
     Caption = 'numero 1'
   end
   object Label2: TLabel
-    Left = 272
+    Left = 312
     Height = 15
     Top = 21
-    Width = 44
-    Caption = 'nemro 2'
+    Width = 51
+    Caption = 'numero 2'
   end
   object Button1: TButton
-    Left = 128
+    Left = 152
     Height = 25
     Top = 80
     Width = 35
@@ -54,12 +54,30 @@ object Form1: TForm1
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 184
+    Left = 216
     Height = 25
     Top = 80
     Width = 40
     Caption = 'x'
     TabOrder = 4
     OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 152
+    Height = 25
+    Top = 48
+    Width = 35
+    Caption = '-'
+    TabOrder = 5
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 216
+    Height = 25
+    Top = 46
+    Width = 40
+    Caption = ':'
+    TabOrder = 6
+    OnClick = Button4Click
   end
 end
